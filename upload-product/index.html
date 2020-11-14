@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nexapp</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p>Upload Product</p>
+        <button type="button" name="button">
+          <span class="fa fa-times"></span>
+        </button>
+      </div>
+    </header>
+    <hr class="header-line">
+
+    <div class="main-body container">
+
+      <section class="profile-head"> <!-- upload profile picture -->
+        <p>Enter Product Details</p>
+      </section>
+
+      <hr>
+
+
+      <section class="profile-info"> <!-- fill profile form -->
+        <form class="profile-inputs" action="" method="post">
+          <label for="product-name">Product Name</label>
+          <input type="text" name="product-name" id="product-name" value="" placeholder="Product Name">
+
+          <label for="product-description">Product Description</label>
+          <textarea name="product-description" rows="8" cols="80" placeholder="Product Description" value=""></textarea>
+
+          <label for="store-category">Category Tags</label>
+          <select name="" id="store-category" class="select" selected data-default>
+            <option value="" disabled selected>Select Multiple</option>
+            <option value="male">Male Fashion</option>
+            <option value="female">Female Fashion</option>
+            <option value="others">Others</option>
+          </select>
+
+          <label for="brand">Brand</label>
+          <select name="" id="store-category" class="select" selected data-default>
+            <option value="" disabled selected class="d-none"></option>
+            <option value="male">Local Brands</option>
+            <option value="female">Diesel Fashion</option>
+            <option value="others">Bata</option>
+          </select>
+
+          <hr>
+
+          <table>
+            <tr>
+              <td>eg</td>
+              <td class="second-col"></td>
+            </tr>
+            <tr>
+              <td>Camera</td>
+              <td class="second-col">20 megapixel. e sharp like die. it has both RGB and any other color spec you can think about</td>
+            </tr>
+            <tr>
+              <td>Battery</td>
+              <td class="second-col">20 megapixel. e sharp like die. it has both RGB and any other color spec you can think about</td>
+            </tr>
+          </table>
+
+          <hr>
+
+          <label for="spec-title">Specification Title</label>
+          <input type="text" name="spec-title" id="spec-title" value="" placeholder="Specification Title">
+
+          <label for="spec-description">Specification Description</label>
+          <textarea name="spec-description" rows="8" cols="80" placeholder="Specification Description" value=""></textarea>
+
+          <div class="select-brand">
+            <button type="button" name="button" class="submit-btn">Add</button>
+          </div>
+
+          <hr>
+
+          <div class="local-brand-sect">
+            <input type="checkbox" id="local-brands" name="" value="">
+            <label for="local-brands">Local brands? (These are hand-made items)</label>
+          </div>
+
+          <div class="local-brand-sect">
+            <input type="checkbox" id="pre-order" name="" value="">
+            <label for="pre-order">Place on pre-order?</label>
+          </div>
+
+
+          <label for="product-price">Product Price</label>
+          <input type="text" name="product-price" id="product-price" value="0" placeholder="">
+
+          <label for="last-price">Second Price</label>
+          <input type="text" name="last-price" id="last-price" value="0" placeholder="">
+
+          <label for="address">Product Address</label>
+          <select name="" id="address" class="select">
+            <option value="volvo" disabled selected></option>
+            <option value="saab">Enugu</option>
+            <option value="saab">Lagos</option>
+            <option value="saab">Port-Haccourt</option>
+          </select>
+
+          <hr>
+
+          <table>
+            <tr>
+              <td>eg</td>
+              <td class="second-col"></td>
+              <td class="third-col"></td>
+            </tr>
+            <tr>
+              <td>Camera</td>
+              <td class="second-col">20 megapixel. e sharp like die. it has both RGB and any other color spec you can think about</td>
+              <td class="third-col">
+                <button class="fa fa-trash"></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Battery</td>
+              <td class="second-col">20 megapixel. e sharp like die. it has both RGB and any other color spec you can think about</td>
+              <td class="third-col">
+                <button class="fa fa-trash"></button>
+              </td>
+            </tr>
+          </table>
+
+          <hr>
+
+          <button type="button" name="size" class="size-variant">+ Add Size Variant</button>
+
+          <p class="color">Colors</p>
+
+          <hr>
+
+          <button type="button" name="color" class="size-variant">+ Add Color</button>
+
+          <p class="note">Note that the total quantity is automatically calculated as the number of calculate variants you selected</p>
+
+          <label for="stock-qty">Quantity in Stock</label>
+          <input type="text" name="stock-qty" id="stock-qty" value="0" placeholder="Quantity in Stock">
+
+          <p class="note">To make your product stand-out, add minimum of 2 high-quality outstanding images</p>
+
+
+          <p class="no-of-pictures">0 of 6 added</p>
+          <button type="button" name="color" class="size-variant">+ Add product image</button>
+
+      <div class="submit">
+      <button type="button" name="button" class="submit-btn">Upload Item</button>
+      </div>
+
+
+
+
+
+    </div>
+  </body>
+</html>
