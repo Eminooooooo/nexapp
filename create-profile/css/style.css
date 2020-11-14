@@ -58,7 +58,6 @@ hr {
  hr.header-line {
    border: 8px solid #e5e5e5;
    clear: both;
-   margin-top: 80px;
  }
 
  header button {
@@ -98,8 +97,8 @@ hr {
    background-image: url("../images/nexbuy-logo-bw.png");
    background-size: contain;
    border-radius: 50%;
-   width: 200px;
-   height: 200px;
+   width: 150px;
+   height: 150px;
    margin: auto;
  }
 
@@ -121,21 +120,34 @@ hr {
  .profile-inputs input {
    border-radius: 10px;
    border: 1px solid #aaa;
-   font-size: 1.2em;
-   padding: 10px;
+   font-size: 0.8em;
+   padding: 7px 10px;
    margin: 5px 0 18px;
+   background-color: #dfdfdf;
  }
 
  .profile-inputs select {
    color: #707070;
    border-radius: 10px;
    border: 1px solid #aaa;
-   font-size: 1.2em;
-   padding: 10px;
-   margin: 5px 0 18px -3px;;
-   justify-content: space-between;
-   align-items: center;
+   font-size: 0.85em;
+   padding: 7px;
+   margin: 5px 0 8px 0;
+   background-color: #dfdfdf;
+   /* default styling arrow */
+
+   appearance: none;
+   -webkit appearance: none;
+   -moz appearance: none;
+   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill:%23666666;" /></svg>');
+   background-position: right 15px top 50%;
+   background-repeat: no-repeat;
+   background-size: 10px;
+   padding-right: 30px;
+
  }
+
+
 
  .select:hover,.select:focus {
    outline: none;
@@ -210,15 +222,30 @@ hr {
 
 /* Media Querries */
 
-@media (max-width:767.95px) { /*Phones*/
+@media (max-width:767.9px) { /*Phones*/
   .terms input[type="checkbox"] {
-    width: 30px;
-    height: 30px;
-    zoom: 2;
+    width: 35px;
+    height: 35px;
   }
 
   hr.header-line {
-    margin-top: 110px;
+    margin-top: 70px;
+  }
+
+  header p {
+    width: 70%;
+    justify-content: flex-start;
+    padding: 3px;
+    font-size: 1.2em;
+    color: #fff;
+  }
+
+  .container {
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
 }
@@ -226,6 +253,10 @@ hr {
 @media (min-width: 768px) and (max-width: 992px) {
   .container {
     width: 70%;
+  }
+
+  hr.header-line {
+    margin-top: 80px;
   }
 
   .terms input[type="checkbox"]:checked {
@@ -238,8 +269,16 @@ hr {
     width: 50%;
   }
 
+  hr.header-line {
+    margin-top: 80px;
+  }
+
   .terms input[type="checkbox"] {
     width: 20px;
     height: 20px;
   }
 }
+
+
+/* edit store */
+/* upload produ */

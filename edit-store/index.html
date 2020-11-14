@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nexapp</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p>Edit Store</p>
+        <button type="button" name="button">
+          <span class="fa fa-times"></span>
+        </button>
+      </div>
+    </header>
+    <hr class="header-line">
+
+    <div class="main-body container">
+
+      <section class="profile-image"> <!-- upload profile picture -->
+        <div class="">
+          <div class="upload-img">
+          </div>
+          <button type="file" name="button">
+            <span class="fa fa-camera"></span>
+          </button>
+        </div>
+      </section>
+
+      <hr>
+
+
+      <section class="profile-info"> <!-- fill profile form -->
+        <form class="profile-inputs" action="" method="post">
+          <label for="first-name">Store Name</label>
+          <input type="text" name="store-name" id="store-name" value="" placeholder="Store Name">
+
+          <label for="store-description">Store Description</label>
+          <textarea name="store-description" rows="8" cols="80" placeholder="Store Description" value=""></textarea>
+
+          <label for="nickname">Store Nickname</label>
+          <input type="text" name="nickname" value="" id="nickname" placeholder="Store Nickname">
+
+          <label for="number">Mobile Number</label>
+          <input type="tel" name="" value="" placeholder="Mobile Number">
+
+          <label for="store-category">Category Tags</label>
+          <select name="" id="store-category" class="select" selected data-default>
+            <option value="" disabled selected>Select Multiple</option>
+            <option value="male">Male Fashion</option>
+            <option value="female">Female Fashion</option>
+            <option value="others">Others</option>
+          </select>
+
+          <div class="brand-list">
+            <p>Brands List (e.g)</p>
+            <hr>
+            <p>Balenciaga</p>
+            <p>Gucci</p>
+            <hr>
+          </div>
+
+          <label for="brands">Brands</label>
+          <input type="text" name="" value="" placeholder="Enter brands you will sell (optional)" class="">
+          <div class="select-brand">
+            <button type="button" name="button" class="submit-btn">Add Brand</button>
+          </div>
+
+
+          <label for="ref-code">Referral Code</label>
+          <input type="text" name="" value="" placeholder="Referral Code">
+
+
+        </form>
+
+      </section>
+
+      <hr>
+
+      <div class="terms">
+        <input type="checkbox" name="" value="">
+        <p>Please note that by creating an account, you agree to our
+          <a href=""><span class="red">Terms of service</span></a> and
+          <a href=""><span class="red">Privacy Policy</span></a>
+          to continue</p>
+      </div>
+
+      <div class="submit">
+      <button type="button" name="button" class="submit-btn">Save Changes</button>
+      </div>
+
+
+
+
+
+    </div>
+  </body>
+</html>
