@@ -106,6 +106,10 @@ hr {
    word-wrap: normal;
  }
 
+ option {
+   background-color: #fff;
+ }
+
  .profile-inputs {
    display: flex;
    flex-direction: column;
